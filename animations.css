@@ -27,7 +27,7 @@ p{
     background-image: linear-gradient(yellow,red,green);
     animation-name: code;
     animation-duration: 2s;
-    animation-iteration-count: 10;
+    animation-iteration-count: infinite;
 }
 @keyframes code{
     from{width: 200px;}
