@@ -4,6 +4,9 @@ function showTime(){
     var m = date.getMinutes(); // 0 - 59
     var s = date.getSeconds(); // 0 - 59
     var session = "AM";
+    var d = date.getDay();
+    var mo = date.getMonth();
+    var y = date.getFullYear();
     
 
 
@@ -22,16 +25,19 @@ function showTime(){
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
+    d = (d < 10) ? "0" + d : d;
+    mo = (mo < 10) ? "0" + mo : mo;
     
 
     //to create time variable
-    var time = h + ":" + m + ":" + s + " " + session;
+    var timeline = "Time: " + h + ":" + m + ":" + s + " " + session;
+    var dayline =  "\n" + "\n" + "Date: " + d + " " + mo + " " + y;
 
     //to display time
-    document.getElementById("MyClockDisplay").innerText = time;
-    // document.getElementById("MyClockDisplay").textContent = time;
+    document.getElementById("timeline").innerText = timeline;
+    document.getElementById("dayline").innerText = dayline;
     
-    setTimeout(showTime, 1000);
+    setTimeout(showTime, 10000000000);
     
 }
 
