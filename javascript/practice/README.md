@@ -1,0 +1,1 @@
+The folder consists of my practice of JavaScript following the teaching on the Learning Management System portal of Timespro

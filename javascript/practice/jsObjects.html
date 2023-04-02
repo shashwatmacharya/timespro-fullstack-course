@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //declaring objects
+
+        var person = {
+            name:'shashwat',
+            age:24,
+            location:'Bengaluru',
+            fullname: function(){
+                return(person.name+person.location);
+            }
+        };
+
+        //declaring using new keyword
+        var person2 = new Object(); //name of an object must start with a capital letter followed by curly brackets
+        person2 ={
+            name:'abishek',
+            age:23,
+            location:'Bengaluru'
+        };
+
+        console.log("Name:"+person.name+"<br>age is:"+person.age+"<br>location is:"+person.location );
+        //using for loop
+            for (let i in person2) {
+                console.log(person2[i]);
+            }
+        //adding properties to an object
+            person.last="acharya";
+            console.log(JSON.stringify(person));
+        //property deletion
+        delete person.last;
+        console.log(JSON.stringify(person));
+        console.log(person.fullname());
+    </script>
+</body>
+</html>

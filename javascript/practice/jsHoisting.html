@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //hoisting is the process where the interpreter allocates memory for variable & function declarations prior to code execution.
+
+        //var declarations are initialized with a DEFAULT value of undefined:
+        function display(name){
+            console.log("name: "+name);
+        }
+        display("bishop")
+        let name;
+        //let & const are not initialized as a part of hoisting
+
+        /*
+            The keywords let and var both declare new variables in JavaScript. 
+            The difference between let and var is in the scope of the variables they create:
+            Variables declared by let are only available inside the block where they’re defined.
+            Variables declared by var are available throughout the function in which they’re declared.
+        */
+
+        /*
+            Variables defined with const cannot be Redeclared.
+            Variables defined with const cannot be Reassigned.
+            Variables defined with const have Block Scope. 
+        */
+
+        var a;
+        a=10;
+        console.log(a);
+
+        let b;
+        b=20;
+        console.log(b);
+
+        b=30;
+        console.log("New value of b: "+b)
+
+        const c=40;
+        // c=30;
+        console.log(c);
+    </script>
+</body>
+</html>
