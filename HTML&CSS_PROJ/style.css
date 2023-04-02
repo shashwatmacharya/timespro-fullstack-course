@@ -1,0 +1,164 @@
+/* homepage css commands */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    height: 15%;
+    width: 100%;
+    background-color: rgb(70, 63, 63);
+    margin: 0;
+}
+
+h1{
+    color: burlywood;
+    font-family: 'Explora', cursive;
+    font-size: 85px;
+    font-weight: bold;
+    margin: 0;
+}
+#nav
+{
+    float: right;
+    padding-right: 20px;
+    font-size: 30px;
+}
+#nav a{
+    font-family: 'Playfair Display', serif;
+    padding: 0px 4px;
+    color:antiquewhite;
+    text-decoration: none;
+}
+.content{
+    height:35%;
+    width: 100%;
+    background-color:tan;
+    margin:0;
+}
+#introheading{
+    font-size: 45px;
+    font-family:'Playfair Display', serif;
+    text-decoration:underline;
+}
+#introcontent{
+    font-size: 27px;
+    text-decoration: none;
+    margin: 0;
+}
+img{
+     height: 325px;
+    width: 600px;
+
+}
+.information{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(255, 223, 182);
+}
+.table-content{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(255, 223, 182);
+    font-size: 30px;
+    padding: 10px 10px;
+}
+.social-footer{
+    display:flex;
+    flex-direction: row;   
+}
+.social-links{
+    font-size: 29px;
+    background-color: rgb(70, 63, 63);
+    padding-left: 100px;
+    color:antiquewhite;
+    text-decoration: none;
+}
+.social-links a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.newsletter-button{
+    padding-left: 800px;
+    font-size: 29px;
+    background-color: rgb(70, 63, 63);
+    color:antiquewhite;
+
+}
+/* sedan/hatchback/suv css commands */
+.car-row-1{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(255, 223, 182);
+    justify-content: space-around;
+    
+}
+.car-row-2{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(255, 223, 182);
+    padding-top: 5px;
+    justify-content: space-around;
+}
+.car-row-3{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(255, 223, 182);
+    padding-top: 5px;
+    justify-content: space-around;
+}
+.sedan_container{
+    height: 10%;
+    width: 100%;
+    background-color: tan;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.underpic_text{
+    font-size: 20px;
+}
+.car-images{
+    border: 1px solid black;  
+}
+@media only screen and (max-width: 884px) {
+    .car-row-1, .car-row-2, .car-row-3{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .car-images{
+        width: 412px;
+    }
+    .social-footer{
+        display:flex;
+        flex-direction: column;
+    }
+    .social-links{
+        padding-left: 0;
+        font-size: 15px;
+        justify-content: space-around;
+        /* display: flex;
+        align-items: flex-start; */
+    }
+    .newsletter-button{
+        padding-left: 0;
+        font-size: 15px;
+        justify-content: space-evenly;
+        padding-top:5px ;
+        /* display: flex;
+        align-items: center; */
+    }
+    .table-content{
+        font-size: 15px;
+    }
+    .img{
+        width: 212px;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+    #introcontent{
+        font-size: 15px;
+    }
+}

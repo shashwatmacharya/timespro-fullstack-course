@@ -1,0 +1,1 @@
+Files in the folder are consistent of the class work coding of Timespro's Data Structures and Analytics class 

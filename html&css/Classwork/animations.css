@@ -1,0 +1,35 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+#rotate{
+    transform: rotate(90deg);
+}
+#skew{
+    transform: skew(30deg);
+}
+#translate{
+    transform: translate(20px,20px);
+}
+#transition{
+    background-color: brown;
+    transition: width 2s;
+   /* transition: background-color 3s;*/
+}
+#transition:hover{
+    width: 500px;
+    /*background-color: yellow;*/
+}
+p{
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(yellow,red,green);
+    animation-name: code;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes code{
+    from{width: 200px;}
+    to{width: 600px;}
+}
